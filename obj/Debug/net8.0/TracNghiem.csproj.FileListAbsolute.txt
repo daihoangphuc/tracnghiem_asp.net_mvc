@@ -289,3 +289,4 @@ E:\!LearnCode\TracNghiem\TracNghiem\bin\Debug\net8.0\AutoMapper.dll
 E:\!LearnCode\TracNghiem\TracNghiem\bin\Debug\net8.0\MvcPaging.dll
 E:\!LearnCode\TracNghiem\TracNghiem\bin\Debug\net8.0\MvcPaging.ObjectMapper.dll
 E:\!LearnCode\TracNghiem\TracNghiem\bin\Debug\net8.0\Sakura.AspNetCore.PagedList.Abstractions.dll
+E:\!LearnCode\TracNghiem\TracNghiem\obj\Debug\net8.0\TracNghiem.sourcelink.json

@@ -7,7 +7,6 @@ namespace TracNghiem.Models
     {
         [Key]
         public  string AnswerId { get; set; }
-        public  string AnswerOption { get; set; } // Ví dụ: "A", "B", "C", "D"
         public  string AnswerDescription { get; set; }
         // Câu hỏi mà đáp án này thuộc về
         [ForeignKey("QuestionId")]

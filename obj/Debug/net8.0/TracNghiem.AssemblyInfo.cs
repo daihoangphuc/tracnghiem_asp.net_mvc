@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TracNghiem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc029134f98ece476ddba1aa97213395e29af16c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TracNghiem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TracNghiem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

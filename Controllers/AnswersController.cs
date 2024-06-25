@@ -57,13 +57,14 @@ namespace TracNghiem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AnswerId,AnswerOption,AnswerDescription,QuestionId")] Answer answer)
+        public async Task<IActionResult> Create([Bind("AnswerId,AnswerDescription,QuestionId")] Answer answer)
         {
-
-                answer.AnswerId = Guid.NewGuid().ToString();
+            if (ModelState.IsValid)
+            {
                 _context.Add(answer);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+            }
             ViewData["QuestionId"] = new SelectList(_context.Questions, "QuestionId", "QuestionContent", answer.QuestionId);
             return View(answer);
         }
@@ -90,7 +91,7 @@ namespace TracNghiem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("AnswerId,AnswerOption,AnswerDescription,QuestionId")] Answer answer)
+        public async Task<IActionResult> Edit(string id, [Bind("AnswerId,AnswerDescription,QuestionId")] Answer answer)
         {
             if (id != answer.AnswerId)
             {

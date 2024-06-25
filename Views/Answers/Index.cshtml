@@ -14,9 +14,6 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.AnswerOption)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.AnswerDescription)
             </th>
             <th>
@@ -29,13 +26,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.AnswerOption)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.AnswerDescription)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Question.QuestionContent)
+                    @Html.DisplayFor(modelItem => item.Question.QuestionContent)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.AnswerId">Edit</a> |

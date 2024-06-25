@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TracNghiem.Data;
 
@@ -10,9 +11,11 @@ using TracNghiem.Data;
 namespace TracNghiem.Migrations
 {
     [DbContext(typeof(TracNghiemContext))]
-    partial class TracNghiemContextModelSnapshot : ModelSnapshot
+    [Migration("20240625035545_ini1")]
+    partial class ini1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
